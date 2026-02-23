@@ -9,8 +9,6 @@ const menuItems = [
     { name: 'Speaker', href: '/' },
     { name: 'Partners', href: '/' },
     { name: 'Gallery', href: '/' },
-    // { name: 'Tickets', href: '/' },
-    // { name: 'FAQ', href: '/' },
 ]
 
 const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any }) => {
@@ -81,7 +79,7 @@ const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any 
                         href="/tickets"
                         className="group relative inline-flex items-center justify-between bg-orange-500 text-black px-8 py-5 rounded-sm overflow-hidden transition-all duration-300 hover:bg-orange-600"
                     >
-                        <span className="text-sm font-bold uppercase tracking-[0.2em] mr-12">Get Your Tickets</span>
+                        <span className="text-sm font-bold uppercase tracking-[0.2em] mr-12">CONTACT US</span>
                         <ArrowRight className="size-5 group-hover:translate-x-2 transition-transform duration-300" />
 
                         <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-500" />

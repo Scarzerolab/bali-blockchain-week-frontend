@@ -33,16 +33,17 @@ const About = () => {
 
                     <div className='space-y-8'>
                         <div>
-                            <span className='text-orange-500 font-bold uppercase tracking-[0.3em] text-sm'>
+                            <span className='text-orange-500 font-bold uppercase tracking-[0.15em] md:tracking-[0.3em] text-xs md:text-sm block mb-2'>
                                 Bali Blockchain Weeks 2026
                             </span>
-                            <h2 className='text-5xl lg:text-7xl font-black text-white mt-4 leading-none uppercase'>
+
+                            <h2 className='text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-[0.95] md:leading-none uppercase'>
                                 WHY OUR EVENT <br />
-                                <span className='text-orange-500'>MATTERS.</span>
+                                <span className='text-orange-500 inline-block mt-1'>MATTERS.</span>
                             </h2>
                         </div>
 
-                        <p className='text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl'>
+                        <p className='text-gray-400 text-base md:text-xl leading-relaxed max-w-xl mt-6 border-l-2 border-orange-500/30 pl-4 md:border-none md:pl-0'>
                             Bali Blockchain Weeks is a flagship event to discover the future of blockchain. Founded and managed by brilliant individuals deeply immersed in the crypto space, our conference brings together industry leaders, innovators, and enthusiasts.
                         </p>
 

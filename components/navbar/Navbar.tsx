@@ -1,6 +1,6 @@
 
 import Link from 'next/link'
-import { Wallet, Menu } from 'lucide-react'
+import { Wallet, Menu, Contact } from 'lucide-react'
 import NavToggle from './NavToggle'
 
 const Navbar = () => {
@@ -19,7 +19,6 @@ const Navbar = () => {
               <li className='hover:text-orange-400 cursor-pointer transition-colors'>Speaker</li>
               <li className='hover:text-orange-400 cursor-pointer transition-colors'>Partners</li>
               <li className='hover:text-orange-400 cursor-pointer transition-colors'>Gallery</li>
-              {/* <li className='hover:text-orange-400 cursor-pointer transition-colors'>FAQ</li> */}
             </ul>
 
             <Link
@@ -28,7 +27,8 @@ const Navbar = () => {
                              px-5 py-2.5 rounded-xl flex items-center gap-2 
                              transition-all duration-300 active:scale-95 shadow-lg shadow-orange-500/20'
             >
-              <Wallet size={16} /> GET TICKETS
+              {/* <Wallet size={16} /> GET TICKETS */}
+              <Contact size={16}/> CONTACT US
             </Link>
           </div>
 

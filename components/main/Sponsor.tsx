@@ -7,14 +7,12 @@ import {
 } from "@/components/ui/carousel"
 
 const Sponsor = () => {
-    const imageLogos = [
-        { src: "https://cryptologos.cc/logos/thumbs/bitcoin.png?v=040", alt: "bitcoin" },
-        { src: "https://cryptologos.cc/logos/thumbs/ethereum.png?v=040", alt: "eth" },
-        { src: "https://cryptologos.cc/logos/thumbs/bnb.png?v=040", alt: "bnb" },
-        { src: "https://cryptologos.cc/logos/thumbs/xrp.png?v=040", alt: "xrp" },
-        { src: "https://cryptologos.cc/logos/thumbs/sui.png?v=040", alt: "sui" },
-        { src: "https://cryptologos.cc/logos/thumbs/usd-coin.png?v=040", alt: "usdt" },
-    ];
+
+    const imageLogos = Array.from({ length: 15 }, (_, i) => ({
+        id: i + 1,
+        alt: 'sponsor',
+        src: `/logo/logo${i + 1}.jpg`,
+    }));
 
     return (
         <section className='py-10 relative overflow-hidden bg-black'>
@@ -26,7 +24,7 @@ const Sponsor = () => {
                 </h2>
             </div>
 
-        
+
             <div className='relative flex flex-col gap-2 z-10'>
                 <div className='border-y border-white/5 py-10 '>
                     <LogoLoop

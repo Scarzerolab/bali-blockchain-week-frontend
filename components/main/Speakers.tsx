@@ -1,48 +1,10 @@
 import React from 'react'
 
-const speakersData = [
-    {
-        name: "Ben Zhou",
-        role: "Co-Founder & CEO, Bybit",
-        image: "https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Ben%20Zhou%201.png"
-    },
-    {
-        name: "Rachel Conlan",
-        role: "CMO, Binance",
-        image: "https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Rachel%20Conlan.png"
-    },
-    {
-        name: "Alan Lang",
-        role: "Head of APAC, X",
-        image: "https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Alan%20Lan.png"
-    },
-    {
-        name: "Upcoming Speaker",
-        role: "Expert, Industry",
-        image: "https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Kevin%20kwong.png"
-    },
-    {
-        name: "Ben Zhou",
-        role: "Co-Founder & CEO, Bybit",
-        image: "https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Ben%20Zhou%201.png"
-    },
-    {
-        name: "Rachel Conlan",
-        role: "CMO, Binance",
-        image: "https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Rachel%20Conlan.png"
-    },
-    {
-        name: "Alan Lang",
-        role: "Head of APAC, X",
-        image: "https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Alan%20Lan.png"
-    },
-    {
-        name: "Upcoming Speaker",
-        role: "Expert, Industry",
-        image: "https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Kevin%20kwong.png"
-    },
-
-];
+const speakersData = Array.from({ length: 8 }, (_, i) => ({
+    name: `Speaker ${i + 1}`,
+    role: "Co-Founder & CEO",
+    image: `https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Ben%20Zhou%201.png`
+}));
 
 const Speakers = () => {
     return (
@@ -59,9 +21,13 @@ const Speakers = () => {
                             <div className='absolute inset-0 z-0 flex items-end justify-center'>
                                 <img
                                     src={speaker.image}
-                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700'
+                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700  grayscale brightness-0 contrast-125 '
                                     alt={speaker.name}
                                 />
+                            </div>
+
+                            <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+                                <div className="rounded-full bg-white absolute w-40 h-40 blur-[80px] opacity-20 "/>
                             </div>
 
                             <div className='relative z-20 flex flex-col items-center pt-8 px-4 text-center'>
