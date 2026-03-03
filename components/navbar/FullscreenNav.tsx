@@ -1,37 +1,20 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import { createPortal } from 'react-dom'
-import { X, Instagram, Mail, Phone, ArrowUpRight, ArrowRight } from 'lucide-react'
+
+import { X, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { useNavStore } from '@/store/useNavStore'
+import { Link as ScrollLink } from 'react-scroll'
+import { navLink } from './NavToggle'
 
-const menuItems = [
-    { name: 'About', href: '/' },
-    { name: 'Speaker', href: '/' },
-    { name: 'Partners', href: '/' },
-    { name: 'Gallery', href: '/' },
-]
 
-const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any }) => {
-    const [mounted, setMounted] = useState(false)
+const FullscreenNav = () => {
 
-    useEffect(() => {
-        setMounted(true)
-        if (isOpen) {
-            document.body.style.overflow = 'hidden'
-        } else {
-            document.body.style.overflow = 'unset'
-        }
-    }, [isOpen])
+    const { isOpen, closeNav } = useNavStore()
 
-    if (!mounted) return null
 
-    return createPortal(
+    return (
         <div
-            className={`
-        md:hidden fixed inset-0 w-screen h-screen bg-black text-white z-[9999]
-        transform transition-all duration-[800ms] ease-[cubic-bezier(0.23,1,0.32,1)]
-        ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}
-      `}
+            className={`md:hidden fixed inset-0 w-screen h-screen bg-black text-white z-[9999] transform transition-all duration-[800ms] ease-[cubic-bezier(0.23,1,0.32,1)] ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
         >
             <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-orange-600/10 blur-[150px] rounded-full -z-10" />
 
@@ -49,7 +32,7 @@ const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any 
                 </div>
 
                 <button
-                    onClick={() => setIsOpen(false)}
+                    onClick={closeNav}
                     className="group flex items-center gap-3 transition-all duration-300"
                 >
                     <span className="text-[10px] tracking-[0.3em] uppercase opacity-0 group-hover:opacity-100 transition-opacity">Close</span>
@@ -61,15 +44,20 @@ const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any 
 
             <div className="h-full flex flex-col justify-center px-8">
                 <nav className="flex flex-col space-y-2">
-                    {menuItems.map((item, index) => (
+                    {navLink.map((item) => (
                         <div key={item.name} className='group flex items-center gap-4 overflow-hidden'>
-                            <Link
-                                href={item.href}
-                                onClick={() => setIsOpen(false)}
+                            <ScrollLink
+                                to={item.target}
+                                smooth={true}
+                                duration={900}
+                                offset={-80}
+                                key={item.name}
+                                onClick={closeNav}
                                 className="text-4xl font-bold tracking-tighter hover:tracking-normal hover:text-orange-500 transition-all duration-500 uppercase flex items-center gap-4"
                             >
                                 {item.name}
-                            </Link>
+                            </ScrollLink>
+
                         </div>
                     ))}
                 </nav>
@@ -88,8 +76,7 @@ const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any 
             </div>
 
             <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-orange-500/20 to-transparent" />
-        </div>,
-        document.body
+        </div>
     )
 }
 

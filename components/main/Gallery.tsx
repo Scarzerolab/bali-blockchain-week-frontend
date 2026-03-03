@@ -9,7 +9,7 @@ const items = Array.from({ length: 23 }, (_, i) => ({
 
 const Gallery = () => {
     return (
-        <div className='container py-10'>
+        <div className='container py-10' id='Gallery'>
 
             <div className='mb-12'>
 
@@ -31,7 +31,7 @@ const Gallery = () => {
                             className="w-full h-auto group-hover:scale-105 transition-all duration-700 ease-in-out"
                         />
 
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
                             <div className="absolute bottom-4 left-4">
                                 <p className="text-orange-500 font-bold text-xs uppercase tracking-widest mb-1">
                                     #BBW2026
@@ -40,7 +40,7 @@ const Gallery = () => {
                                     {item.title}
                                 </h3>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="absolute inset-0 border-2 border-orange-500/0 group-hover:border-orange-500/50 rounded-2xl transition-all duration-500 pointer-events-none"></div>
                     </div>

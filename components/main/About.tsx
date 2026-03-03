@@ -11,21 +11,21 @@ import {
 const About = () => {
     const features = [
         {
-            title: "Global Networking",
-            desc: "Connect with industry leaders, developers, and investors from over 50 countries in an intimate setting."
+            title: "Talent & Workforce Acceleration",
+            desc: "From literacy campaigns to certified blockchain developer programs to building a ready-to-hire national talent pipeline"
         },
         {
-            title: "Deep Dive Workshops",
-            desc: "Hands-on sessions covering ZK-proofs, modular blockchains, and the future of decentralized finance."
+            title: "National Ecosystem Convergence",
+            desc: "A multi-sector platform uniting universities, startups,VCs, enterprises, regulators, and Web3 communities across Indonesia’s."
         },
         {
-            title: "Security Summit",
-            desc: "Dedicated tracks for smart contract auditing and institutional-grade security infrastructure."
+            title: "Policy Alignment",
+            desc: "Closed-door roundtables and cross-sector MoUs shaping practical blockchain policy and real-world adoption."
         }
     ]
 
     return (
-        <section className='relative py-10 bg-black overflow-hidden'>
+        <section className='relative py-10 bg-black overflow-hidden' id='About'>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none z-0" />
 
             <div className='container relative z-10'>
@@ -44,7 +44,7 @@ const About = () => {
                         </div>
 
                         <p className='text-gray-400 text-base md:text-xl leading-relaxed max-w-xl mt-6 border-l-2 border-orange-500/30 pl-4 md:border-none md:pl-0'>
-                            Bali Blockchain Weeks is a flagship event to discover the future of blockchain. Founded and managed by brilliant individuals deeply immersed in the crypto space, our conference brings together industry leaders, innovators, and enthusiasts.
+                            Bali Blockchain Weeks is a multi-sector initiative to propel Indonesia's Digital 2045 vision into reality Based on four main pillars literacy, workforce development, startup innovation, and policy alignment. We unites a diverse ecosystem including students, tech founders, enterprises, and regulators under a single strategic roadmap
                         </p>
 
                     </div>
@@ -55,7 +55,7 @@ const About = () => {
 
                         <div className='relative z-10 w-full aspect-video lg:aspect-auto lg:h-[500px] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-orange-500/10 group'>
                             <img
-                                src="https://coinfest.asia/_next/image?url=https%3A%2F%2Fwojgrioccmbywgtruwfl.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2FMedia%2520Folders%2FCoinfest%2520Asia%25202026%2Fhomepage-speakers%2Ftraders-card.png&w=1080&q=75"
+                                src="/gallery/img5.jpg"
                                 alt="Web3 Farm Ecosystem"
                                 className='w-full h-full object-cover'
                             />

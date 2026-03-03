@@ -15,7 +15,7 @@ const Sponsor = () => {
     }));
 
     return (
-        <section className='py-10 relative overflow-hidden bg-black'>
+        <section className='py-10 relative overflow-hidden bg-black' id='Partners'>
             <div className="absolute top-0 left-[-10%] w-[1000px] h-[500px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none z-0" />
 
             <div className='container relative z-10 mb-5 md:mb-10'>

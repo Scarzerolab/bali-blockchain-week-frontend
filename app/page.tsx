@@ -6,6 +6,7 @@ import Gallery from '@/components/main/Gallery'
 import Sponsor from '@/components/main/Sponsor'
 import Footer from '@/components/Footer'
 import { ReactLenis } from '@/utils/lenis'
+import FullscreenNav from '@/components/navbar/FullscreenNav'
 
 
 const page = () => {
@@ -14,6 +15,7 @@ const page = () => {
   return (
     <ReactLenis root>
       <Navbar />
+      <FullscreenNav/>
       <Hero />
       <Speakers />
       <About/>
