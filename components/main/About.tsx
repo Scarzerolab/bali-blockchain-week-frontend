@@ -37,13 +37,13 @@ const About = () => {
                                 Bali Blockchain Weeks 2026
                             </span>
 
-                            <h2 className='text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-[0.95] md:leading-none uppercase'>
+                            <h2 className='text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[0.95] md:leading-none uppercase'>
                                 WHY OUR EVENT <br />
                                 <span className='text-orange-500 inline-block mt-1'>MATTERS.</span>
                             </h2>
                         </div>
 
-                        <p className='text-gray-400 text-base md:text-xl leading-relaxed max-w-xl mt-6 border-l-2 border-orange-500/30 pl-4 md:border-none md:pl-0'>
+                        <p className='text-gray-400 text-base md:text-lg leading-relaxed max-w-xl mt-6 border-l-2 border-orange-500/30 pl-4 md:border-none md:pl-0'>
                             Bali Blockchain Weeks is a multi-sector initiative to propel Indonesia's Digital 2045 vision into reality Based on four main pillars literacy, workforce development, startup innovation, and policy alignment. We unites a diverse ecosystem including students, tech founders, enterprises, and regulators under a single strategic roadmap
                         </p>
 
@@ -53,7 +53,7 @@ const About = () => {
 
                         <div className="absolute w-[120%] h-[120%] bg-orange-600/20 rounded-full blur-[100px] animate-pulse pointer-events-none" />
 
-                        <div className='relative z-10 w-full aspect-video lg:aspect-auto lg:h-[500px] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-orange-500/10 group'>
+                        <div className='relative z-10 w-full aspect-video lg:aspect-auto lg:h-[450px] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-orange-500/10 group'>
                             <img
                                 src="/gallery/img5.jpg"
                                 alt="Web3 Farm Ecosystem"
