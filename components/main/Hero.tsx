@@ -25,12 +25,12 @@ const Hero = () => {
 
             <main className="relative z-10 min-h-screen flex flex-col justify-center w-full container lg:py-32">
                 <div className="mb-4 md:mb-6">
-                    <span className="px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-300 text-[10px] md:text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+                    <span className="px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-300 text-[9px] md:text-xs font-bold uppercase tracking-widest backdrop-blur-md">
                         Southeast Asia’s Leading Web3 & Crypto Event
                     </span>
                 </div>
 
-                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-none tracking-[-0.04em] mb-4 md:mb-6">
+                <h1 className="text-[42px] sm:text-5xl md:text-7xl font-bold leading-none tracking-[-0.04em] mb-4 md:mb-6">
                     Bali <span className="text-orange-400">Blockchain</span> <br className="hidden sm:block" />
                     Weeks 2026
                 </h1>
