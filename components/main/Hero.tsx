@@ -26,17 +26,17 @@ const Hero = () => {
 
             <main className="relative z-10 min-h-screen flex flex-col justify-center w-full container">
                 <div className="mb-4 md:mb-6">
-                    <span className="px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-300 text-[10px] md:text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+                    <span className="px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-300 text-[8px] md:text-xs font-bold uppercase tracking-widest backdrop-blur-md">
                         Southeast Asia’s Leading Web3 & Crypto Event
                     </span>
                 </div>
 
-                <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold leading-none tracking-[-0.04em] mb-4 md:mb-6">
+                <h1 className="text-[44px] sm:text-6xl md:text-8xl font-black md:font-bold leading-none tracking-[-0.03em] mb-4 md:mb-6">
                     Bali <span className="text-orange-400">Blockchain</span> <br className="hidden sm:block" />
                     Weeks 2026
                 </h1>
 
-                <p className="max-w-xl text-base sm:text-lg md:text-xl text-gray-200 mb-8 md:mb-12 leading-relaxed opacity-80">
+                <p className="max-w-xl text-[15px] sm:text-lg md:text-xl text-gray-200 mb-8 md:mb-12 leading-relaxed opacity-80">
                     A national movement uniting builders, universities, policymakers, and investors to transform Bali into a global blockchain powerhouse
                 </p>
 
@@ -68,7 +68,7 @@ const Hero = () => {
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
 
-  <ComunitiesButton/>
+                    <ComunitiesButton />
                 </div>
             </main>
 

@@ -43,7 +43,7 @@ const About = () => {
                             </h2>
                         </div>
 
-                        <p className='text-gray-400 text-base md:text-lg leading-relaxed max-w-xl mt-6 border-l-2 border-orange-500/30 pl-4 md:border-none md:pl-0'>
+                        <p className='text-gray-400 text-sm md:text-lg leading-relaxed max-w-xl mt-6 border-l-2 border-orange-500/30 pl-4 md:border-none md:pl-0'>
                             Bali Blockchain Weeks is a multi-sector initiative to propel Indonesia's Digital 2045 vision into reality Based on four main pillars literacy, workforce development, startup innovation, and policy alignment. We unites a diverse ecosystem including students, tech founders, enterprises, and regulators under a single strategic roadmap
                         </p>
 

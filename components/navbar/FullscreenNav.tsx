@@ -25,8 +25,8 @@ const FullscreenNav = () => {
                     </span>
 
                     <div className="relative overflow-hidden">
-                        <span className="text-xl md:text-2xl font-bold tracking-[0.3em] uppercase text-white/90 leading-none block">
-                            Weeks <span className="font-bold text-white">2026</span>
+                        <span className="text-xl md:text-2xl font-black tracking-[0.3em] uppercase text-white/90 leading-none block">
+                            Weeks <span className="font-black text-white">2026</span>
                         </span>
                     </div>
                 </div>
