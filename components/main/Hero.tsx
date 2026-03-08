@@ -24,7 +24,7 @@ const Hero = () => {
             <div className="absolute inset-0 z-10 backdrop-blur-xl bg-gradient-to-r from-black/80 via-black/40 to-transparent [mask-image:linear-gradient(to_right,black_0%,black_50%,transparent_100%)]">
             </div>
 
-            <main className="relative z-10 min-h-screen flex flex-col justify-center w-full container">
+            <main className="relative z-10 min-h-screen flex flex-col justify-center w-full container lg:py-32">
                 <div className="mb-4 md:mb-6">
                     <span className="px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-300 text-[8px] md:text-xs font-bold uppercase tracking-widest backdrop-blur-md">
                         Southeast Asia’s Leading Web3 & Crypto Event
