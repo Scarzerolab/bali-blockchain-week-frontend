@@ -3,7 +3,7 @@ import React from 'react'
 const speakersData = Array.from({ length: 8 }, (_, i) => ({
     name: `Speaker ${i + 1}`,
     role: "Co-Founder & CEO",
-    image: `https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Ben%20Zhou%201.png`
+    image: 'speakers.png'
 }));
 
 const Speakers = () => {
@@ -21,9 +21,14 @@ const Speakers = () => {
                         <div key={index} className='relative group overflow-hidden rounded-3xl border bg-[#111] aspect-[3/4] transition-all duration-500 border-orange-500/50'>
 
                             <div className='absolute inset-0 z-0 flex items-end justify-center'>
-                                <img
+                                {/* <img
                                     src={speaker.image}
                                     className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700  grayscale brightness-0 contrast-125 '
+                                    alt={speaker.name}
+                                /> */}
+                                <img
+                                    src={speaker.image}
+                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700 pt-4'
                                     alt={speaker.name}
                                 />
                             </div>

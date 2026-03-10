@@ -8,7 +8,7 @@ import {
 
 const Sponsor = () => {
 
-    const imageLogos = Array.from({ length: 15 }, (_, i) => ({
+    const imageLogos = Array.from({ length: 17 }, (_, i) => ({
         id: i + 1,
         alt: 'sponsor',
         src: `/logo/logo${i + 1}.jpg`,

@@ -56,8 +56,8 @@ const Hero = () => {
                             <MapPin className="text-yellow-500 w-4 h-4 md:w-6 md:h-6" />
                         </div>
                         <div>
-                            <p className="text-[8px] md:text-[10px] uppercase tracking-wider text-gray-400 font-bold">Location</p>
-                            <p className="text-sm md:text-lg font-semibold leading-tight">Coming Soon...</p>
+                            <p className="text-[8px] md:text-[10px] uppercase tracking-wider text-gray-400 font-bold min-w-32">Location</p>
+                            <p className="text-sm md:text-lg font-semibold leading-tight">TBA</p>
                         </div>
                     </div>
                 </div>
