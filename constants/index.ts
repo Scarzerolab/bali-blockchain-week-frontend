@@ -1,17 +1,17 @@
 export const aboutFeatures = [
-        {
-            title: "Talent & Workforce Acceleration",
-            desc: "From literacy campaigns to certified blockchain developer programs to building a ready-to-hire national talent pipeline"
-        },
-        {
-            title: "National Ecosystem Convergence",
-            desc: "A multi-sector platform uniting universities, startups,VCs, enterprises, regulators, and Web3 communities across Indonesia’s."
-        },
-        {
-            title: "Policy Alignment",
-            desc: "Closed-door roundtables and cross-sector MoUs shaping practical blockchain policy and real-world adoption."
-        }
-    ]
+    {
+        title: "Talent & Workforce Acceleration",
+        desc: "From literacy campaigns to certified blockchain developer programs to building a ready-to-hire national talent pipeline"
+    },
+    {
+        title: "National Ecosystem Convergence",
+        desc: "A multi-sector platform uniting universities, startups,VCs, enterprises, regulators, and Web3 communities across Indonesia’s."
+    },
+    {
+        title: "Policy Alignment",
+        desc: "Closed-door roundtables and cross-sector MoUs shaping practical blockchain policy and real-world adoption."
+    }
+]
 
 export const galleryItems = Array.from({ length: 23 }, (_, i) => ({
     id: i + 1,
@@ -85,4 +85,48 @@ export const faqData = [
             { q: "What are the benefits of being a Media Partner?", a: "Media partners receive exclusive press access, interview opportunities with keynote speakers, and VIP lounge access." },
         ]
     }
+];
+
+
+export const plans = [
+    {
+        id: "0",
+        title: "General Pass",
+        price: 99,
+        caption: "Entry level access",
+        features: [
+            "3-Day Main Stage Access",
+            "Community Networking Zone",
+            "Event Goodie Bag (Standard)",
+            "Workshop Entry",
+        ],
+        logo: "/logo.png",
+    },
+    {
+        id: "1",
+        title: "Whale VIP",
+        price: 850,
+        caption: "Maximum exclusivity",
+        features: [
+            "Everything in Pro Delegate",
+            "VIP Lounge & Catering",
+            "Closing Party VIP Area",
+            "Private Investor Dinner",
+            "Dedicated Concierge",
+        ],
+        logo: "/logo.png",
+    },
+    {
+        id: "2",
+        title: "Pro Delegate",
+        price: 299,
+        caption: "For builders & founders",
+        features: [
+            "Everything in General Pass",
+            "Business Matchmaking",
+            "Exclusive Side Events",
+            "Priority Entrance Line",
+        ],
+        logo: "/logo.png",
+    },
 ];

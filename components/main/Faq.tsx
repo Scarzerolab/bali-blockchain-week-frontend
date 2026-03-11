@@ -13,9 +13,8 @@ const Faq = () => {
         <section className="bg-black py-10 min-h-screen" id='FAQ'>
             <div className="container">
 
-                <h2 className='text-4xl md:text-5xl font-black text-white mb-12 uppercase tracking-tighter'>
-                    Frequently <span className='text-orange-500'>ask questions</span>
-
+                <h2 className='text-4xl md:text-5xl font-black text-white mb-12 md:mb-20 uppercase tracking-tighter'>
+                    Frequently asked <span className='text-orange-500'>questions</span>
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -23,12 +22,18 @@ const Faq = () => {
                         <React.Fragment key={idx}>
 
                             <div className="lg:col-span-4">
-                                <h3 className="sticky top-30 text-3xl font-black text-white mb-1 uppercase tracking-tighter">
-                                    {section.category}
-                                </h3>
+                                <div className="sticky top-30 flex items-stretch gap-4">
+                                    <div className="w-[4px] bg-orange-500 rounded-full" />
+
+                                    <div className="flex flex-col justify-center">
+                                        <h3 className="text-2xl md:text-3xl font-black text-white/90 leading-[0.9] uppercase tracking-tighter">
+                                            {section.category}
+                                        </h3>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div className="lg:col-span-8 mb-6 lg:mb-16">
+                            <div className="lg:col-span-8 mb-6">
                                 <Accordion type="single" collapsible className="w-full space-y-4 cursor-pointer">
                                     {section.questions.map((item, i) => (
                                         <AccordionItem

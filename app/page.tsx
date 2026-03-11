@@ -9,6 +9,7 @@ import { ReactLenis } from '@/lib/lenis'
 import FullscreenNav from '@/components/navbar/FullscreenNav'
 import GetInvolved from '@/components/main/GetInvolved'
 import Faq from '@/components/main/Faq'
+import Pricing from '@/components/main/Pricing'
 
 
 const page = () => {
@@ -26,6 +27,7 @@ const page = () => {
       <Sponsor/>
       <GetInvolved/>
       <Faq/>
+      <Pricing/>
       <Footer/>
 
     </ReactLenis>

@@ -129,9 +129,9 @@
 
 
 @layer utilities {
- .flex-center {
-  @apply flex items-center justify-center
- }
+  .flex-center {
+    @apply flex items-center justify-center
+  }
 
   .flex-between {
     @apply flex items-center justify-between;
@@ -139,5 +139,19 @@
 
   .container {
     @apply max-w-7xl mx-auto px-4;
+  }
+
+  .g4 {
+    background: linear-gradient(180deg, #7c2d12 0%, #1c0a00 100%);
+  }
+
+  .g7 {
+    background: linear-gradient(180deg, #1c0a00 0%, #000000 100%);
+    position: relative;
+  }
+
+  .border-orange-glow {
+    border-color: #f97316;
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.15);
   }
 }

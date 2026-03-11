@@ -31,9 +31,10 @@ const Hero = () => {
                     </span>
                 </div>
 
-                <h1 className="text-[40px] sm:text-6xl md:text-8xl font-black md:font-bold leading-[0.95] tracking-tighter md:leading-none mb-4 md:mb-6 uppercase">
-                    Bali <span className="text-orange-400">Blockchain</span> <br className="hidden sm:block" />
-                    Weeks 2026
+                <h1 className="text-[44px] sm:text-6xl md:text-8xl font-black md:font-bold leading-[0.8] sm:leading-[0.85] md:leading-[0.9] tracking-tighter mb-4 md:mb-6 uppercase max-w-none">
+                    <span className="block">Bali</span>
+                    <span className="block">Blockchain</span>
+                    <p className="block">Weeks <span className='text-orange-500'>2026</span></p>
                 </h1>
 
                 <p className="max-w-xl text-[15px] sm:text-lg md:text-xl text-gray-200 mb-8 md:mb-12 leading-relaxed opacity-80">
@@ -77,3 +78,9 @@ const Hero = () => {
 }
 
 export default Hero
+
+{/* <img
+                                    src={speaker.image}
+                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700  grayscale brightness-0 contrast-125 '
+                                    alt={speaker.name}
+                                /> */}
