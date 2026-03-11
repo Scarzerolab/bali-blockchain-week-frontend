@@ -15,13 +15,11 @@ const speakersData = Array.from({ length: 8 }, (_, i) => ({
 
 const Speakers = () => {
     return (
-        <div className='py-20' id='Speakers'>
+        <div className='py-10 md:py-20' id='Speakers'>
             <div className='container'>
-                <h2 className='text-3xl md:text-5xl font-black text-white mb-12 uppercase tracking-tighter'>
+                <h2 className='text-[33px] md:text-5xl font-black text-white mb-12 leading-8 uppercase tracking-tighter'>
                     upcoming <span className='text-orange-500'>SPEAKERS</span>
                 </h2>
-
-
 
                 <div className='grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden md:grid'>
                     {speakersData.map((speaker, index) => (

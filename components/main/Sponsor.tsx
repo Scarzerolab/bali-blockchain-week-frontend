@@ -14,6 +14,10 @@ const Sponsor = () => {
         src: `/logo/logo${i + 1}.jpg`,
     }));
 
+    const firstHalf = imageLogos.slice(0, 9);  // Logo 1 sampai 9
+    const secondHalf = imageLogos.slice(9);
+
+
     return (
         <section className='py-10 relative overflow-hidden bg-black' id='Partners'>
             <div className="absolute top-0 left-[-10%] w-[1000px] h-[500px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none z-0" />
@@ -28,7 +32,7 @@ const Sponsor = () => {
             <div className='relative flex flex-col gap-2 z-10'>
                 <div className='border-y border-white/5 py-10 '>
                     <LogoLoop
-                        logos={imageLogos}
+                        logos={firstHalf}
                         speed={40}
                         direction="right"
                         logoHeight={80}
@@ -37,7 +41,7 @@ const Sponsor = () => {
                 </div>
                 <div className='border-y border-white/5 py-10'>
                     <LogoLoop
-                        logos={imageLogos}
+                        logos={secondHalf}
                         speed={60}
                         direction="left"
                         logoHeight={80}

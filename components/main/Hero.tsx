@@ -1,16 +1,17 @@
-import FloatingLines from '@/components/FloatingLines'
 import { ArrowRight, Calendar, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import ComunitiesButton from '../ComunitiesButton'
+import FloatingLines from '../FloatingLines'
 
 const Hero = () => {
+
     return (
         <div className='relative bg-black min-h-screen text-white overflow-hidden flex flex-col'>
 
-            <div className="absolute inset-0 z-0 ">
+            <div className="absolute inset-0 z-0">
                 <FloatingLines
                     linesGradient={["#ff8800", "#ff0000", "#ff9500"]}
-                    animationSpeed={1}
+                    animationSpeed={0.3}
                     interactive={false}
                     bendRadius={5}
                     bendStrength={-0.5}
@@ -19,7 +20,6 @@ const Hero = () => {
                     parallaxStrength={0.2}
                 />
             </div>
-
 
             <div className="absolute inset-0 z-10 backdrop-blur-xl bg-gradient-to-r from-black/80 via-black/40 to-transparent [mask-image:linear-gradient(to_right,black_0%,black_50%,transparent_100%)]">
             </div>
