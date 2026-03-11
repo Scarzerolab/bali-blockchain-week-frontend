@@ -67,7 +67,7 @@ const Speakers = () => {
                 <Carousel
                     opts={{
                         align: "start",
-                        loop: true,
+                        // loop: true,
                     }}
                     className="w-full md:hidden"
                 >
