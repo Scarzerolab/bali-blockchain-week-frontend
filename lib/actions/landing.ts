@@ -33,41 +33,41 @@ export const sponsorFunction = async (prevState: any, formData: FormData) => {
 
         const { data, error } = await resend.emails.send({
             from: 'Bali Blockchain Weeks <onboarding@resend.dev>',
-            to: ['paramsuraqutay@gmail.com'],
+            to: ['paramasuraqutay@gmail.com'],
             subject: `Sponsorship Inquiry: ${validatedData.data.company}`,
             html: `
-                <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 600px; margin: 0 auto; border: 1px solid #f0f0f0; padding: 24px; border-radius: 12px;">
+                <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 1000px; margin: 0 auto; border: 1px solid #f0f0f0; padding: 24px; border-radius: 12px;">
                     <h2 style="color: #000; margin-top: 0; border-bottom: 2px solid #f97316; padding-bottom: 10px; display: inline-block;">
                         Sponsorship Inquiry
                     </h2>
                     <p style="color: #666; font-size: 15px;">A new partnership request has been submitted via the website. Details are provided below:</p>
                     
                     <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-                        <tr>
-                            <td style="padding: 8px 0; color: #888; font-size: 14px; width: 140px;">Full Name</td>
-                            <td style="padding: 8px 0; color: #000; font-size: 14px; font-weight: 600;">: ${validatedData.data.firstName} ${validatedData.data.lastName}</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 8px 0; color: #888; font-size: 14px;">Email</td>
-                            <td style="padding: 8px 0; color: #f97316; font-size: 14px; font-weight: 600;">: ${validatedData.data.email}</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 8px 0; color: #888; font-size: 14px;">Telegram</td>
-                            <td style="padding: 8px 0; color: #000; font-size: 14px;">: ${validatedData.data.telegram}</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 8px 0; color: #888; font-size: 14px;">Position</td>
-                            <td style="padding: 8px 0; color: #000; font-size: 14px;">: ${validatedData.data.position}</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 8px 0; color: #888; font-size: 14px;">Company</td>
-                            <td style="padding: 8px 0; color: #000; font-size: 14px; font-weight: 600;">: ${validatedData.data.company}</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 8px 0; color: #888; font-size: 14px;">Company Focus</td>
-                            <td style="padding: 8px 0; color: #000; font-size: 14px;">: ${validatedData.data.companyFocus}</td>
-                        </tr>
-                    </table>
+                    <tr>
+                        <td style="padding: 8px 0; color: #888; font-size: 14px; white-space: nowrap; width: 100px;">Full Name</td>
+                        <td style="padding: 8px 0; color: #000; font-size: 14px; font-weight: 600;">: ${validatedData.data.firstName} ${validatedData.data.lastName}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px 0; color: #888; font-size: 14px; white-space: nowrap;">Email</td>
+                        <td style="padding: 8px 0; color: #f97316; font-size: 14px; font-weight: 600;">: <a href="mailto:${validatedData.data.email}" style="color: #f97316; text-decoration: none;">${validatedData.data.email}</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px 0; color: #888; font-size: 14px; white-space: nowrap;">Telegram</td>
+                        <td style="padding: 8px 0; color: #000; font-size: 14px;">: ${validatedData.data.telegram}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px 0; color: #888; font-size: 14px; white-space: nowrap;">Position</td>
+                        <td style="padding: 8px 0; color: #000; font-size: 14px;">: ${validatedData.data.position}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px 0; color: #888; font-size: 14px; white-space: nowrap;">Company</td>
+                        <td style="padding: 8px 0; color: #000; font-size: 14px; font-weight: 600;">: ${validatedData.data.company}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px 0; color: #888; font-size: 14px; white-space: nowrap;">Focus</td>
+                        <td style="padding: 8px 0; color: #000; font-size: 14px;">: ${validatedData.data.companyFocus}</td>
+                    </tr>
+                </table>
 
                     <div style="margin-top: 20px; padding: 15px; background-color: #fcfcfc; border-left: 4px solid #f97316; border-radius: 4px;">
                         <strong style="font-size: 14px; color: #000;">Interested in:</strong>
