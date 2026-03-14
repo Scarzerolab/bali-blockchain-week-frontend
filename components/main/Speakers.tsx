@@ -1,33 +1,44 @@
 import React from 'react'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+} from "@/components/ui/carousel"
+import Image from 'next/image';
+import SpeakerSlider from '../SpeakerSlider';
 
 const speakersData = Array.from({ length: 8 }, (_, i) => ({
     name: `Speaker ${i + 1}`,
     role: "Co-Founder & CEO",
-    image: `https://wojgrioccmbywgtruwfl.supabase.co/storage/v1/object/public/Media%20Folders/Coinfest%20Asia%202026/homepage-speakers/Speakers/Ben%20Zhou%201.png`
+    image: '/cz.webp'
 }));
+
+
 
 const Speakers = () => {
     return (
-        <div className='py-20' id='Speakers'>
+        <div className='py-10 md:py-20' id='Speakers'>
             <div className='container'>
-                <h2 className='text-3xl md:text-5xl font-black text-white mb-12 uppercase tracking-tighter'>
+                <h2 className='text-[33px] md:text-5xl font-black text-white mb-12 leading-8 uppercase tracking-tighter'>
                     upcoming <span className='text-orange-500'>SPEAKERS</span>
                 </h2>
 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+                <div className='grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden md:grid'>
                     {speakersData.map((speaker, index) => (
                         <div key={index} className='relative group overflow-hidden rounded-3xl border bg-[#111] aspect-[3/4] transition-all duration-500 border-orange-500/50'>
 
                             <div className='absolute inset-0 z-0 flex items-end justify-center'>
-                                <img
+                                <Image
                                     src={speaker.image}
-                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700  grayscale brightness-0 contrast-125 '
+                                    width={300}
+                                    height={400}
+                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700 pt-4'
                                     alt={speaker.name}
+                                    priority
                                 />
                             </div>
-
                             <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-                                <div className="rounded-full bg-white absolute w-40 h-40 blur-[80px] opacity-20 "/>
+                                <div className="rounded-full bg-white absolute w-40 h-40 blur-[80px] opacity-20 will-change-auto" />
                             </div>
 
                             <div className='relative z-20 flex flex-col items-center pt-8 px-4 text-center'>
@@ -48,6 +59,8 @@ const Speakers = () => {
                         </div>
                     ))}
                 </div>
+
+                <SpeakerSlider/>
 
 
 
