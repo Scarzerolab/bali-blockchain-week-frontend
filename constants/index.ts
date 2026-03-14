@@ -21,33 +21,44 @@ export const galleryItems = Array.from({ length: 23 }, (_, i) => ({
 
 export const getInvolvedCard = [
     {
+        id: 1,
         title: "JOIN AS AN ATTENDEE",
         description: "Network with industry leaders and gain exclusive global insights.",
-        buttonText: "Get Tickets",
+        image: "/gallery/img2.webp",
+        className: "md:col-span-2 md:row-span-2",
         href: '#',
-        image: 'https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=600&auto=format&fit=crop',
+
     },
     {
-        title: "BECOME A SPONSOR",
-        description: "Scale your brand visibility and connect with a premium audience.",
-        buttonText: "Request Prospectus",
+        id: 2,
+        title: "Become A Sponsor",
+        description: "Scale your brand visibility with a premium audience.",
+        image: "/gallery/img12.webp",
+        className: "md:col-span-1 md:row-span-1",
         href: '/sponsorship',
-        image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=600&auto=format&fit=crop",
+
     },
     {
-        title: "PARTNER AS MEDIA",
+        id: 3,
+        title: "Partner as Media",
         description: "Access exclusive press materials and cover groundbreaking news.",
-        buttonText: "Apply Now",
+
+        image: "/gallery/img20.webp",
+        className: "md:col-span-1 md:row-span-2",
         href: '/media',
-        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop",
+
     },
-    // {
-    //     title: "BECOME AN AFFILIATE",
-    //     description: "Promote the world's top event and earn high-tier commissions.",
-    //     buttonText: "Join Now",
-    //     image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop"
-    // },
+    {
+        id: 4,
+        title: "Become an Affiliate",
+        description: "Promote the world's top event and earn high-tier commissions.",
+        image: "/gallery/img9.webp",
+        className: "md:col-span-1 md:row-span-1",
+        href: '#',
+
+    },
 ];
+
 
 
 export const faqData = [

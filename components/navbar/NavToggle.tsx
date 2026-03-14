@@ -8,10 +8,10 @@ import { X, Menu, Wallet, Contact } from 'lucide-react'
 import { useNavStore } from '@/store/useNavStore'
 
 export const navLink = [
-  { name: 'Speakers', target: 'Speakers' },
   { name: 'About', target: 'About' },
-  { name: 'Gallery', target: 'Gallery' },
+  { name: 'Speakers', target: 'Speakers' },
   { name: 'Partners', target: 'Partners' },
+  { name: 'Gallery', target: 'Gallery' },
   { name: 'FAQ', target: 'FAQ' },
 ]
 

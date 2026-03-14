@@ -1,15 +1,18 @@
-import Hero from '@/components/main/Hero'
-import Speakers from '@/components/main/Speakers'
 import Navbar from '@/components/navbar/Navbar'
+import Hero from '@/components/main/Hero'
+import CountUpSection from '@/components/main/CountUpSection'
+
+import { ReactLenis } from '@/lib/lenis'
+import Sponsor from '@/components/main/Sponsor'
+import Speakers from '@/components/main/Speakers'
 import About from '@/components/main/About'
 import Gallery from '@/components/main/Gallery'
-import Sponsor from '@/components/main/Sponsor'
-import Footer from '@/components/Footer'
-import { ReactLenis } from '@/lib/lenis'
-import FullscreenNav from '@/components/navbar/FullscreenNav'
-import GetInvolved from '@/components/main/GetInvolved'
 import Faq from '@/components/main/Faq'
+import GetInvolved from '@/components/main/GetInvolved'
 import Pricing from '@/components/main/Pricing'
+import Footer from '@/components/Footer'
+import FullscreenNav from '@/components/navbar/FullscreenNav'
+
 
 
 const page = () => {
@@ -18,17 +21,27 @@ const page = () => {
   return (
     <ReactLenis root>
 
-      <Navbar />
-      <FullscreenNav/>
-      <Hero />
-      <Speakers />
-      <About/>
-      <Gallery/>
-      <Sponsor/>
-      <GetInvolved/>
-      <Faq/>
-      <Pricing/>
-      <Footer/>
+      <main className="bg-black min-h-screen">
+        <Navbar />
+        <FullscreenNav/>
+
+        <Hero />
+
+
+        <div className="relative z-10 -mt-[100vh] bg-black rounded-t-[50px] shadow-[0_-50px_100px_rgba(0,0,0,1)] border-t border-white/5">
+          <CountUpSection />
+          <About/>
+          <Speakers/>
+          <Sponsor/>
+          <GetInvolved/>
+          <Gallery/>
+          <Faq/>
+          <Pricing/>
+          <Footer/>
+        </div>
+      </main>
+
+
 
     </ReactLenis>
   )

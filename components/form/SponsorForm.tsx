@@ -1,6 +1,6 @@
 'use client'
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { ChevronLeft } from "lucide-react";
+import { toast } from "sonner";
 import Link from "next/link";
 import { sponsorFunction } from "@/lib/actions/landing";
 
@@ -20,7 +21,20 @@ const checkBoxData = ["Side Event", "Programs", "Exhibition", "Branding & Activa
 
 const SponsorForm = () => {
 
-    const [state, formAction, isPending] = useActionState(sponsorFunction, null)
+    const [state, formAction, isPending] = useActionState(sponsorFunction, {
+        success: false,
+        message: "",
+    })
+
+    useEffect(() => {
+        if (state?.message) {
+            if (state.success) {
+                toast.success(state.message);
+            } else {
+                toast.error(state.message);
+            }
+        }
+    }, [state]);
 
     return (
         <form className="space-y-6" action={formAction}>
@@ -32,7 +46,7 @@ const SponsorForm = () => {
                         id="firstName"
                         name="firstName"
                         className="input-landing" />
-                    {state?.error.firstName && (
+                    {state?.error?.firstName && (
                         <p className="text-red-500 text-xs pt-1">{state.error.firstName}</p>
                     )}
                 </div>
@@ -42,7 +56,7 @@ const SponsorForm = () => {
                         id="lastName"
                         name="lastName"
                         className="input-landing" />
-                    {state?.error.lastName && (
+                    {state?.error?.lastName && (
                         <p className="text-red-500 text-xs pt-1">{state.error.lastName}</p>
                     )}
                 </div>
@@ -55,7 +69,7 @@ const SponsorForm = () => {
                     name="email"
                     type="email"
                     className="input-landing" />
-                {state?.error.email && (
+                {state?.error?.email && (
                     <p className="text-red-500 text-xs pt-1">{state.error.email}</p>
                 )}
             </div>
@@ -66,7 +80,7 @@ const SponsorForm = () => {
                     id="telegram"
                     name="telegram"
                     className="input-landing" />
-                {state?.error.telegram && (
+                {state?.error?.telegram && (
                     <p className="text-red-500 text-xs pt-1">{state.error.telegram}</p>
                 )}
             </div>
@@ -84,7 +98,7 @@ const SponsorForm = () => {
                         <SelectItem value="vp">VP / C-Level</SelectItem>
                     </SelectContent>
                 </Select>
-                {state?.error.position && (
+                {state?.error?.position && (
                     <p className="text-red-500 text-xs pt-1">{state.error.position}</p>
                 )}
             </div>
@@ -97,7 +111,7 @@ const SponsorForm = () => {
                         id="company"
                         name="company"
                         className="input-landing" />
-                    {state?.error.company && (
+                    {state?.error?.company && (
                         <p className="text-red-500 text-xs pt-1">{state.error.company}</p>
                     )}
                 </div>
@@ -108,7 +122,7 @@ const SponsorForm = () => {
                         id="companyFocus"
                         name="companyFocus"
                         className="input-landing" />
-                    {state?.error.companyFocus && (
+                    {state?.error?.companyFocus && (
                         <p className="text-red-500 text-xs pt-1">{state.error.companyFocus}</p>
                     )}
                 </div>
@@ -130,22 +144,22 @@ const SponsorForm = () => {
                         </div>
                     ))}
                 </div>
-                {state?.error.interests && (
+                {state?.error?.interests && (
                     <p className="text-red-500 text-xs pt-1">{state.error.interests}</p>
                 )}
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-between pt-8 gap-4 border-t border-zinc-800 mt-10">
-                <Link href={'/'} type="button" className="flex items-center text-zinc-400 hover:text-white transition-colors text-sm py-2">
+            <div className="flex items-center justify-between pt-8 gap-4 border-t border-zinc-800 mt-10">
+                <Link href={'/'} className="flex items-center text-zinc-400 hover:text-white transition-colors text-sm py-2 shrink-0">
                     <ChevronLeft className="w-4 h-4 mr-1" /> Back
                 </Link>
-                <Button type="submit" disabled={isPending} className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-12 py-6 rounded-xl transition-all hover:scale-105 shadow-lg shadow-orange-500/20">
-                    {isPending ? (
-                        <p>Submiting ...</p>
-                    ) : (
-                        <p>Submit</p>
-                    )}
 
+                <Button
+                    type="submit"
+                    disabled={isPending}
+                    className="cursor-pointer w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 md:px-12 py-6 rounded-xl transition-all hover:scale-105 shadow-lg shadow-orange-500/20 uppercase"
+                >
+                    {isPending ? 'Submiting ... ' : 'Submit'}
                 </Button>
             </div>
         </form>
