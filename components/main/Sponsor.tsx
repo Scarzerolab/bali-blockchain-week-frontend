@@ -3,14 +3,14 @@ import LogoLoop from '../LogoLoop'
 
 const Sponsor = () => {
 
-    const imageLogos = Array.from({ length: 23 }, (_, i) => ({
+    const imageLogos = Array.from({ length: 24 }, (_, i) => ({
         id: i + 1,
         alt: 'sponsor',
         src: `/logo/logo${i + 1}.webp`,
     }));
 
-    const firstHalf = imageLogos.slice(0, 11); 
-    const secondHalf = imageLogos.slice(11);
+    const firstHalf = imageLogos.slice(0, 12); 
+    const secondHalf = imageLogos.slice(12);
 
 
     return (
