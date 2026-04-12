@@ -50,16 +50,6 @@ const NavToggle = () => {
             </li>
         </ScrollLink>
 
-        {/* <Link
-          href={'https://x.com/BaliBlockchainW'}
-          target='_blank'
-          className='bg-orange-500 hover:bg-orange-600 text-black text-xs font-bold 
-                             px-5 py-2.5 rounded-xl flex items-center gap-2 
-                             transition-all duration-300 active:scale-95 shadow-lg shadow-orange-500/20'
-        >
-
-          <Contact size={16} /> CONTACT US
-        </Link> */}
       </div>
 
       <div className='md:hidden text-white italic text-xs'>
