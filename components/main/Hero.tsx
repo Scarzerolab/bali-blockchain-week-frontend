@@ -174,4 +174,3 @@ function OverlayContent({ scrollYProgress }: { scrollYProgress: any }) {
         </div>
     );
 }
-
