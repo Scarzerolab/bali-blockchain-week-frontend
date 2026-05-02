@@ -3,7 +3,7 @@ import LogoLoop from '../LogoLoop'
 
 const Sponsor = () => {
 
-    const imageLogosSponsors = Array.from({ length: 3 }, (_, i) => ({
+    const imageLogosSponsors = Array.from({ length: 5 }, (_, i) => ({
         id: i + 1,
         alt: 'sponsor',
         src: `/logo/sponsor/logo${i + 1}.webp`,
