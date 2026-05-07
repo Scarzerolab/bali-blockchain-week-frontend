@@ -20,7 +20,7 @@ const Pricing = () => {
                     style={{ msOverflowStyle: 'none', scrollbarWidth: 'none' }}
                 >
 
-                    <div className='relative border-2 p-7 min-w-80 rounded-3xl xl:min-w-0 xl:w-[calc(33.33%+2px)] transition-all duration-300 bg-zinc-950 border-zinc-glow z-[3] xl:scale-105 shadow-2xl flex flex-col'>
+                    {/* <div className='relative border-2 p-7 min-w-80 rounded-3xl xl:min-w-0 xl:w-[calc(33.33%+2px)] transition-all duration-300 bg-zinc-950 border-zinc-glow z-[3] xl:scale-105 shadow-2xl flex flex-col'>
 
                         <div className='absolute h-[330px] left-0 right-0 top-0 z-[1] rounded-tl-3xl rounded-tr-3xl opacity-60 bg-gradient-to-b from-zinc-700 to-transparent' />
 
@@ -71,7 +71,7 @@ const Pricing = () => {
                                 Buy Tickets
                             </Link>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className='relative border-2 p-7 min-w-80 rounded-3xl xl:min-w-0 xl:w-[calc(33.33%+2px)] transition-all duration-300 g7 border-orange-500 z-[3] scale-105 shadow-2xl flex flex-col'>
 
@@ -91,7 +91,7 @@ const Pricing = () => {
                             </div>
                             <div className='flex relative z-[2] items-center justify-center'>
                                 <div className='font-inter text-[72px] font-bold leading-[84px] text-white'>
-                                    $ 500
+                                    FREE
                                 </div>
                             </div>
                         </div>
@@ -103,28 +103,24 @@ const Pricing = () => {
                         <ul className='mx-auto space-y-4 xl:px-7 flex-1'>
                             <li className='flex relative items-center gap-5 font-semibold leading-5'>
                                 <img src='/check.png' alt='check' className='size-10 object-contain' />
-                                <p className='flex-1'>Fast lane registration</p>
+                                <p className='flex-1'>Netowrking</p>
                             </li>
                             <li className='flex relative items-center gap-5 font-semibold leading-5'>
                                 <img src='/check.png' alt='check' className='size-10 object-contain' />
-                                <p className='flex-1'>All benefit general pass</p>
+                                <p className='flex-1'>Merch</p>
                             </li>
                             <li className='flex relative items-center gap-5 font-semibold leading-5'>
                                 <img src='/check.png' alt='check' className='size-10 object-contain' />
-                                <p className='flex-1'>VIP ZONE</p>
+                                <p className='flex-1'>Doorprize Ticket</p>
                             </li>
                             <li className='flex relative items-center gap-5 font-semibold leading-5'>
                                 <img src='/check.png' alt='check' className='size-10 object-contain' />
-                                <p className='flex-1'>VIP Networking</p>
-                            </li>
-                            <li className='flex relative items-center gap-5 font-semibold leading-5'>
-                                <img src='/check.png' alt='check' className='size-10 object-contain' />
-                                <p className='flex-1'>Dedicated concierge</p>
+                                <p className='flex-1'>Knowledge</p>
                             </li>
                         </ul>
 
                         <div className='mt-10 flex w-full justify-center'>
-                            <Link href={'#'} className='px-8 py-4 text-lg bg-orange-500 rounded-2xl font-black uppercase tracking-tight hover:bg-orange-600 hover:-translate-y-1 transition-all duration-300 cursor-pointer'>
+                            <Link href={'https://luma.com/cj17xgai'} className='px-8 py-4 text-lg bg-orange-500 rounded-2xl font-black uppercase tracking-tight hover:bg-orange-600 hover:-translate-y-1 transition-all duration-300 cursor-pointer'>
                                 Buy Tickets
                             </Link>
                         </div>

@@ -7,11 +7,28 @@ import {
 import Image from 'next/image';
 import SpeakerSlider from '../SpeakerSlider';
 
-const speakersData = Array.from({ length: 1 }, (_, i) => ({
-    name: `GreenMan-Ron ${i + 1}`,
+const speakersData = [
+  {
+    name: "GreenMan-Ron",
     role: "Community Manager & Educator Lead BlockDevId",
-    image: `/speakers/speaker${i + 1}.webp`
-}));
+    image: "/speakers/speaker1.webp",
+  },
+  {
+    name: "Felix Jonathan",
+    role: "Head of Business Development Di Indodax",
+    image: "/speakers/speaker2.webp",
+  },
+  {
+    name: "Shafi Karim",
+    role: "Lead at Solana Bali, Director at Agridex, Founder at Blockponics",
+    image: "/speakers/speaker3.webp",
+  },
+  {
+    name: "Raine Renaldi",
+    role: "President of ID OpenTech Group",
+    image: "/speakers/speaker4.webp",
+  }
+];
 
 
 
