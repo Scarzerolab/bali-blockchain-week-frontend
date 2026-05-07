@@ -7,11 +7,28 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 
 
-const speakersData = Array.from({ length: 8 }, (_, i) => ({
-    name: `Speaker ${i + 1}`,
-    role: "Co-Founder & CEO",
-    image: '/cz.webp'
-}));
+const speakersData = [
+  {
+    name: "GreenMan-Ron",
+    role: "Community Manager & Educator Lead BlockDevId",
+    image: "/speakers/speaker1.webp",
+  },
+  {
+    name: "Felix Jonathan",
+    role: "Head of Business Development Di Indodax",
+    image: "/speakers/speaker2.webp",
+  },
+  {
+    name: "Shafi Karim",
+    role: "Lead at Solana Bali, Director at Agridex, Founder at Blockponics",
+    image: "/speakers/speaker3.webp",
+  },
+  {
+    name: "Raine Renaldi",
+    role: "President of ID OpenTech Group",
+    image: "/speakers/speaker4.webp",
+  }
+];
 
 export default function SpeakerSlider() {
   return (
