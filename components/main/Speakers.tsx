@@ -27,6 +27,11 @@ const speakersData = [
         name: "Raine Renaldi",
         role: "President of ID OpenTech Group",
         image: "/speakers/speaker4.webp",
+    },
+    {
+        name: "Philip Tam",
+        role: "Founder of First Bullion Holdings",
+        image: "/speakers/speaker6.webp",
     }
 ];
 
