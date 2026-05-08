@@ -26,7 +26,7 @@ const itemVariants: Variants = {
 
 const SponsorCard: React.FC = () => {
     return (
-        <div className='flex flex-wrap justify-center items-center gap-8 px-4 pb-24'>
+        <div className='flex flex-wrap justify-center items-center gap-8 px-4 pb-24 max-w-7xl mx-auto'>
             {imageLogosSponsors.map((logo) => (
                 <motion.div
                     key={logo.id}
