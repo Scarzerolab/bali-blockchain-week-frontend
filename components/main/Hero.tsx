@@ -137,7 +137,7 @@ function OverlayContent({ scrollYProgress }: { scrollYProgress: any }) {
                     Bali Blokchain Weeks
                 </h1>
                 <p className="text-xl tracking-[0.5em] mt-4 uppercase">
-                    May 9, 2026
+                    19 August, 2026
                 </p>
             </motion.div>
 
