@@ -9,7 +9,7 @@ interface SponsorLogo {
     src: string;
 }
 
-const imageLogosSponsors: SponsorLogo[] = Array.from({ length: 9 }, (_, i) => ({
+const imageLogosSponsors: SponsorLogo[] = Array.from({ length: 8 }, (_, i) => ({
     id: i + 1,
     alt: 'sponsor',
     src: `/logo/sponsor/logo${i + 1}.webp`,
