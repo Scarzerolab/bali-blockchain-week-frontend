@@ -12,7 +12,7 @@ const preloadImages = () => {
     for (let i = 15; i <= frameCount; i++) {
         const img = new Image();
         const formattedIndex = i.toString().padStart(3, "0");
-        img.src = `/sequence/ezgif-frame-${formattedIndex}.jpg`;
+        img.src = `/sequence/ezgif-frame-${formattedIndex}.webp`;
         images.push(img);
     }
 };
